@@ -26,4 +26,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Prepros
+prepros.cfg
+
 # End of https://www.gitignore.io/api/windows,sass
