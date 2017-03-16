@@ -407,7 +407,8 @@ template {
   box-sizing: border-box; }
 
 body {
-  color: #048ca8; }
+  color: #048ca8;
+  text-align: center; }
 
 img {
   max-width: 100%;
@@ -451,7 +452,14 @@ h2 {
   font-size: 1.2rem; }
 
 .grid {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
+
+.col {
+  flex: 0 0 100%; }
+
+.col--full {
+  flex: 0 0 100%; }
 
 .main-nav {
   background: #d31869;
@@ -531,6 +539,18 @@ h2 {
 
 .hero-img {
   display: none; }
+
+.sales-points {
+  padding: 10vh 0; }
+  .sales-points .sales-point {
+    margin-bottom: 2.5em; }
+    .sales-points .sales-point:first-of-type {
+      margin-top: 1.5em; }
+    .sales-points .sales-point:last-child {
+      margin-bottom: 0; }
+
+.promo {
+  padding: 10vh 0; }
 
 .btn {
   display: inline-block;
