@@ -9,6 +9,7 @@ h1
   font-weight: $font-light
   line-height: 1.15
   text-transform: uppercase
+  letter-spacing: 3px
 
 h2
   font-size: 1.2rem
@@ -19,8 +20,40 @@ h2
 .title-large
   font-size: 3rem
   font-weight: $font-black
+  line-height: .9
   span
     font-weight: $font-light
+
+.title-box
+  background: $accent
+  color: $text-inverse
+  margin: 0 auto
+  padding: 2em
+  transform: translateY(30%)
+  max-width: 90%
+  @media (min-width: 495px)
+    transform: translateY(50%)
+
+  & + .bg-primary
+    padding-top: 6em
+    @media (min-width: 495px)
+      padding-top: 8em
+
+  @media (min-width: 725px)
+    max-width: 700px  
+
+.title-footer
+  text-transform: uppercase
+  letter-spacing: 3px
+  line-height: 1
+
+  &::before, &::after
+    content: ''
+    display: block
+    height: 1px
+    background: $text-inverse
+    opacity: 0.25
+    margin: .75em 0
 
 .text-intro
   font-size: 1.2rem
