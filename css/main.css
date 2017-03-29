@@ -534,7 +534,8 @@ h2 {
       flex: auto;
       background: none;
       margin-top: 1em;
-      margin-left: 2em; } }
+      margin-left: 2em;
+      left: 0; } }
   .main-nav ul {
     display: flex;
     flex-direction: column;
@@ -550,6 +551,7 @@ h2 {
     display: flex; }
     @media (min-width: 725px) {
       .main-nav li {
+        display: inline-block;
         border: none;
         text-align: right; } }
   .main-nav a {
@@ -561,7 +563,7 @@ h2 {
     justify-content: center; }
     @media (min-width: 725px) {
       .main-nav a {
-        flex-basis: auto; } }
+        display: inline; } }
     .main-nav a:hover {
       background: rgba(0, 0, 0, 0.1); }
       @media (min-width: 725px) {
@@ -707,7 +709,8 @@ footer {
   color: white;
   border: 2px solid #d31869; }
   .btn--primary:hover, .btn--primary:focus {
-    background: #8e1047; }
+    background: #8e1047;
+    border-color: #8e1047; }
 
 .btn--secondary {
   border: 2px solid white;

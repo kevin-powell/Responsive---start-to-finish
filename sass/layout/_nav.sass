@@ -9,12 +9,14 @@
   overflow: hidden
 
   transition: all ease-in-out 250ms
+
   @media(min-width: 725px)
     position: relative
     flex: auto
     background: none
     margin-top: 1em
     margin-left: 2em
+    left: 0
 
   ul
     display: flex
@@ -31,6 +33,7 @@
     border-bottom: 1px solid rgba(0, 0, 0, .15)
     display: flex
     @media(min-width: 725px)
+      display: inline-block
       border: none
       text-align: right
 
@@ -42,7 +45,7 @@
     align-items: center
     justify-content: center
     @media(min-width: 725px)
-      flex-basis: auto
+      display: inline
 
     &:hover
       background: rgba(0, 0, 0, .10)
